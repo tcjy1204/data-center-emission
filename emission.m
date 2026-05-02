@@ -1,7 +1,7 @@
 clear;clc;
 tic
 current_path = fileparts(mfilename('fullpath'));% Get the folder path of the currently running script/function
-path1=fullfile(current_path, 'province_interpolated.xlsx');
+path1=fullfile(current_path, 'scenarios.xlsx');
 path2=fullfile(current_path, 'Supplementary information.xlsx');
 [~,pn,~]=xlsread(path1,'low_scale','a2:a32');
 IT_scale0=xlsread(path1,'low_scale','b2:b32');% 2023 MWh
